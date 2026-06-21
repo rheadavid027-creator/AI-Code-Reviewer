@@ -8,6 +8,10 @@ langchain-openai
 langchain-mistralai
 openai
 mistralai
+langchain-groq
+langchain_google_genai
+
+
 
 # Vector Database
 

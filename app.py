@@ -1,16 +1,18 @@
-from langchain_mistralai import ChatMistralAI
-from langchain_core.messages import HumanMessage, SystemMessage
-from dotenv import load_dotenv 
+from agents.reviewer import run_full_review
+content = ''
 
-load_dotenv();
+try:
+    with open("./Test_code_file/Main.java", "r") as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print("File not found")
+     
+  
+result = run_full_review(code=content , language="Java")    
+
+print (result)
 
 
-llm = ChatMistralAI(model="mistral-large-latest", temperature=0.7)
 
-messages = [
-    SystemMessage(content="You are a helpful coding assistant."),
-    HumanMessage(content="Write a JAVA function to reverse a string.")
-]
 
-response = llm.invoke(messages)
-print(response.content)
