@@ -49,6 +49,7 @@ uvicorn
 # UI (optional)
 
 streamlit
+matplotlib
 
 # Utilities
 
