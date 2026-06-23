@@ -87,5 +87,4 @@ Next steps I can do for you
 
 ---
 
-Tell me which of the next steps you'd like me to implement.
 
