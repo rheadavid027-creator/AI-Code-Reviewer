@@ -78,13 +78,4 @@ Troubleshooting
 - If LLM clients fail to initialize: confirm provider keys and the correct env var names for each LangChain integration.
 - Check the terminal where `streamlit run app.py` was started for tracebacks.
 
-Next steps I can do for you
---------------------------
-
-- Add a `.env.example` with common provider variable names.
-- Add a small test script that calls `run_full_review` and validates output structure.
-- Add PowerShell scripts or a `Makefile` to simplify setup and run commands.
-
----
-
 
